@@ -3,63 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Registro - Emanuel Davezac</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Volver al inicio</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_mi.html">Sobre Mi</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="formulario_basico.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <hr>
+    <main class="container">
+        <section class="form-container">
+            <h1>Formulario de Registro</h1>
+            <p>Completá tus datos para formar parte de la comunidad.</p>
 
-    <h1>Formulario de Registro</h1>
+            <form action="" method="POST" class="main-form">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Emanuel" required>
+                    </div>
 
-    <form action="" method="POST">
-        
-        <p>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required>
-        </p>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ej: Davezac" required>
+                    </div>
 
-        <p>
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido" required>
-        </p>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                    </div>
 
-        <p>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-        </p>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="3496 000000" required>
+                    </div>
 
-        <p>
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono" required>
-        </p>
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" min="1" required>
+                    </div>
 
-        <p>
-            <label for="edad">Edad:</label><br>
-            <input type="number" id="edad" name="edad" required>
-        </p>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                </div>
 
-        <p>
-            <label for="contrasena">Contraseña:</label><br>
-            <input type="password" id="contrasena" name="contrasena" required>
-        </p>
+                <div class="form-group">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="¿En qué puedo ayudarte?"></textarea>
+                </div>
 
-        <p>
-            <label for="comentarios">Comentarios:</label><br>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="30" required></textarea>
-        </p>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">Enviar Registro</button>
+                    <button type="reset" class="btn-reset">Limpiar</button>
+                </div>
 
-        <p>
-            <button type="submit">Enviar</button>
-            <button type="reset">Reset</button>
-        </p>
-
-    </form>
+            </form>
+        </section>
+    </main>
 
 </body>
 </html>

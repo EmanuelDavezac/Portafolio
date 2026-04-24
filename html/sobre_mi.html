@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_mi.html">Sobre Mi</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="formulario_basico.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Volver a Inicio</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <section class="about-card">
+            <div class="about-image">
+                <img src="foto.jpg" alt="Foto de Emanuel Davezac">
+            </div>
 
-    <hr> <h1>Sobre mi</h1>
-    
-    <p><b>Soy Emanuel Davezac, tengo 20 años y soy de Esperanza, Santa Fe.</b></p>
-    
-    <p>
-        Actualmente soy estudiante de Desarrollo de Software.<br>
-        Es una carrera que elegí porque me apasiona entender cómo funcionan los sistemas y el hardware de las computadoras.
-    </p>
+            <div class="about-info">
+                <h1>Sobre Mi</h1>
+                <p class="intro">
+                    Soy <span>Emanuel Davezac</span>, tengo 20 años y soy de Esperanza, Santa Fe.
+                </p>
+
+                <p class="description">
+                    Actualmente soy estudiante de <strong>Desarrollo de Software</strong>. 
+                    Elegí esta carrera porque me apasiona entender la lógica detrás de los sistemas 
+                    y cómo el hardware se comunica con el código para crear soluciones reales.
+                </p>
+
+                <div class="hobbies">
+                    <h3>Que mas me gusta?</h3>
+                    <ul>
+                        <li>Hardware de PC</li>
+                        <li>Nuevas tecnologías</li>
+                        <li>Café y código</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
