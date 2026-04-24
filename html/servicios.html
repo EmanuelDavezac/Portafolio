@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Volver al inicio</a></li>
-        </ul>
-    </nav>
-    <hr><h1>Servicios</h1>
-    <ul>
-        <li>
-            <p>Desarrollo de paginas web a medida</p>
-        </li>
-        <li>
-            <p>Mantenimiento de sistemas</p>
-        </li>
-        <li>
-            <p>Desarrollo de software de escritorio</p>
-        </li>
-    </ul>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_mi.html">Sobre Mi</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="formulario_basico.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <div class="servicios-header">
+            <h1>Mis Servicios</h1>
+            <p>Soluiones tecnologícas adaptadas a tus necesidades</p>
+        </div>
+
+        <section class="servicios-grid">
+            <article class="servicio-card">
+                <div class="icono">🌐</div>
+                <h3>Desarrollo Web</h3>
+                <p>Creación de páginas web a medida, responsivas y optimizadas para tu negocio.</p>   
+            </article>
+        </section>
+
+        <article class="servicio-card">
+                <div class="icono">⚙️</div>
+                <h3>Mantenimiento</h3>
+                <p>Actualización, depuración y mejora de sistemas para que nunca dejen de funcionar.</p>
+            </article>
+
+            <article class="servicio-card">
+                <div class="icono">💻</div>
+                <h3>Software de Escritorio</h3>
+                <p>Desarrollo de aplicaciones robustas a medida para potenciar tu computadora.</p>
+            </article>
+
+    </main>
     
 </body>
 </html>
